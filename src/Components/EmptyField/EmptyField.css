@@ -1,0 +1,7 @@
+.empty-field {
+  width: 115px;
+  height: 115px;
+  background: var(--color-grey);
+  opacity: 0.3;
+  transition: 100s all;
+}

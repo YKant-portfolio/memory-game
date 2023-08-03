@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Readex+Pro:wght@500&display=swap");
+
+:root {
+  --color-primary: #0083fc;
+  --color-accent: #f53;
+  --color-popup-text: #fff;
+  --color-grey: #e5e5e5;
+  --container-width: 1440px;
+  --color-ks: #e6e6e6;
+}
+
+* {
+  all: unset;
+  display: revert;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}

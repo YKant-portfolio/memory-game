@@ -1,0 +1,48 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "app__h1 app__h1 app__h1"
+    "table-of-moves board table-of-attempts";
+  column-gap: 73px;
+  margin-top: 165px;
+  margin-bottom: 222px;
+}
+
+.table-of-moves,
+.table-of-attempts {
+  width: 193px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.table-of-moves span,
+.table-of-attempts span {
+  color: var(--color-accent);
+  display: block;
+}
+
+.app__h1 {
+  grid-area: app__h1;
+  font-family:
+    Readex Pro,
+    sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 109px;
+  justify-self: center;
+}
+
+.table-of-moves {
+  grid-area: table-of-moves;
+  justify-self: end;
+}
+
+.table-of-attempts {
+  grid-area: table-of-attempts;
+  justify-self: start;
+}

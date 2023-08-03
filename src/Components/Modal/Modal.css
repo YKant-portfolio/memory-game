@@ -1,0 +1,33 @@
+.modal {
+  position: absolute;
+  left: calc(50% - 342px);
+  top: calc(50% - 32px);
+  width: 685px;
+  height: 371px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-accent);
+  border-radius: 12px;
+}
+
+.modal__btn {
+  width: 340px;
+  height: 64px;
+  background: var(--color-primary);
+  border-radius: 12px;
+  color: var(--color-popup-text);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+.modal__description {
+  width: 50%;
+  color: var(--color-popup-text);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Readex Pro", sans-serif;
+}

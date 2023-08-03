@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 115px;
+  background: var(--color-primary);
+  cursor: pointer;
+  color: var(--color-ks);
+  font-weight: 500;
+  font-family:
+    Readex Pro,
+    sans-serif;
+  font-size: 30px;
+  transition: 1s all;
+}
+
+.card__open {
+  background-color: var(--color-grey);
+  transition: 0.4s all;
+}
+
+.card__image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
