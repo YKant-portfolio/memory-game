@@ -41,6 +41,7 @@ const generateCards = (arr: string[]): ICard[] =>
     id: window.crypto.randomUUID(),
     isSelect: false,
     isMatching: false,
+    isFlipped: false,
   }));
 
 export const generateArr = () => {
