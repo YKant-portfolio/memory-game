@@ -22,7 +22,7 @@ export const App = () => {
   const [disabled, setDisabled] = useState(true);
 
   const newGame = () => {
-    const gameCards = generateArr().map((card) => ({ ...card, isFlipped: false }));
+    const gameCards = generateArr().map((card) => ({ ...card }));
     setCards([...gameCards]);
     setCountMoves(0);
     setCountPairCards(0);
@@ -43,7 +43,7 @@ export const App = () => {
         setCards((prevCards) =>
           prevCards.map((card) => {
             if (card.id === firstCardId || card.id === secondCardId) {
-              return { ...card, isSelect: false, isFlipped: true };
+              return { ...card, isSelect: false };
             }
             return card;
           }),
@@ -84,8 +84,6 @@ export const App = () => {
     setTimeout(() => {
       firstCard.isSelect = false;
       secondCard.isSelect = false;
-      firstCard.isFlipped = false; // Обновите состояние
-      secondCard.isFlipped = false; // Обновите состояние
       setCards([...cards]);
     }, 500);
     trackMove();
